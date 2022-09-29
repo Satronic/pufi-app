@@ -1,0 +1,14 @@
+.header{
+    /* background-color: #0f0f0f; */
+    background-image: url('../../assets/header.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+.header, .title{
+    margin: 0;
+    padding: 0;
+}
