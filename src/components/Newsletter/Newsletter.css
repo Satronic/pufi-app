@@ -1,0 +1,41 @@
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px darkslategray;
+    margin-left: 1%;
+    padding: 1%;
+}
+
+.newsletter-title{
+    font-size: 75%;
+    margin: 1%;
+    padding: 0;
+}
+
+.newsletter-subtitle{
+    font-size: 250%;
+    margin: 0;
+}
+
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-input-email{
+    font-size: 16px;
+    width: 40%;
+    height: 34px;
+    padding-left: 20px;
+}
+
+.form-button-submit{
+    font-size: 16px;
+    font-weight: bold;
+    width: 7.5%;
+    height: 40px;
+}

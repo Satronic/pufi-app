@@ -13,6 +13,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 42px;
+    padding-left: 20px;
+    margin: 20px;
 }
 
 .navbar-link {
@@ -38,6 +40,7 @@
 
 .navbar-container-acount{
     justify-content: flex-end;
+    align-items: start;
 }
 
 .logo-rain{
