@@ -8,7 +8,17 @@
     padding: 0;
 }
 
-.header, .title{
+.header{
     margin: 0;
     padding: 0;
+}
+
+.header-title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 300%;
+    font-weight: normal;
+    color: white;
+    text-shadow: 1px 1px 3px darkslategray;
+    text-align: center;
+    margin-top: 100px;
 }

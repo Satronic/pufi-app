@@ -1,0 +1,42 @@
+.product{
+    display: flex;
+    flex-direction: row;
+}
+
+.product-container-left, 
+.product-container-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 1%;
+}
+
+.product-image-primary{
+    width: 100%;
+}
+
+.product-image-secundary{
+    width: 30%;
+}
+
+.product-description{
+    text-align: center;
+}
+
+.product-button{
+    width: 15%;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-button:hover{
+    width: 15%;
+    height: 40px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+
+}

@@ -1,5 +1,5 @@
 import './Navbar.css';
-import logo from '../../assets/logo.svg';
+// import logo from '../../assets/logo.svg';
 import logo_rain from '../../assets/logo-rain.svg';
 import {NavLink} from 'react-router-dom';
 
@@ -7,7 +7,8 @@ function Navbar() {
     return (
     <nav className="navbar">
         <div className="navbar-container-logo">
-            <img src={logo} alt="logo"></img>
+            {/* <img src={logo} alt="logo"></img> */}
+            <h1 className="navbar-logo">Pufi</h1>
         </div>
         <div className="navbar-container-menu">
             
