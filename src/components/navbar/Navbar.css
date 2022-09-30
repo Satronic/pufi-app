@@ -22,7 +22,10 @@
     flex-direction: column;
     color: white;
     text-decoration: none;
+    text-shadow: 1px 1px 3px darkslategray;
     padding: 0 20px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
 }
 
 .navbar-container-logo,

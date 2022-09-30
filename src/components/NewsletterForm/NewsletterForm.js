@@ -40,14 +40,14 @@ function NewsletterForm() {
         if(!test){
             setStateForm({
                 state: 'invalid-email',
-                message: 'Invalid Email'
+                message: 'Correo invalido'
             })
             return;
         }
         
         setStateForm({
             state: 'valid-email',
-            message: 'Valid Email'
+            message: 'Correo válido'
         })
         setInputForm({
             [name]: value
@@ -76,12 +76,10 @@ function NewsletterForm() {
                         placeholder="Ingresa tu e-mail"
                         onChange={onChangeForm}
                     />
-                
-                    <button className="form-button-submit" type="submit">
+                    <button className={stateForm.state === 'valid-email' ? 'form-button-submit': 'button-inactive'} type="submit">
                         ENVIAR
                     </button>
                 </fieldset>
-                
             </form>
         </>
     );

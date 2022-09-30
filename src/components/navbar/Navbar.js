@@ -13,25 +13,25 @@ function Navbar() {
         <div className="navbar-container-menu">
             
             <NavLink className="navbar-link">
-                <img className="logo-rain" src={logo_rain} alt="logo-rain" />
+                {/* <img className="logo-rain" src={logo_rain} alt="logo-rain" /> */}
                 PUFI PUFF
             </NavLink>
         
         
             <NavLink className="navbar-link">
-                <img className="logo-rain" src={logo_rain} alt="logo-rain" />
+                {/* <img className="logo-rain" src={logo_rain} alt="logo-rain" /> */}
                 PUFI RAIN
             </NavLink>
     
         
             <NavLink className="navbar-link">
-                <img className="logo-rain" src={logo_rain} alt="logo-rain" />
+                {/* <img className="logo-rain" src={logo_rain} alt="logo-rain" /> */}
                 PUFI CART
             </NavLink>
     
         
             <NavLink className="navbar-link">
-                <img className="logo-rain" src={logo_rain} alt="logo-rain" />
+                {/* <img className="logo-rain" src={logo_rain} alt="logo-rain" /> */}
                 PUFI NAP
             </NavLink>
 
