@@ -1,0 +1,81 @@
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-input-email{
+    border: 0;
+    font-size: 16px;
+    width: 320px;
+    height: 34px;
+    padding-left: 20px;
+    margin: 10px 0 10px 0;
+    color: inherit !important;
+    background-color: transparent;
+}
+
+.form-input-email:active{
+    border: 0;
+    outline: none;
+    margin: 10px 0 10px 0;
+}
+
+.form-input-email:focus{
+    border: 0;
+    outline: none;
+    margin: 0 0 10px 0;
+}
+
+
+.form-button-submit{
+    font-size: 16px;
+    font-weight: bold;
+    /* width: 7.5%; */
+    height: 40px;
+}
+
+.success-message{
+    border: 2px solid green;
+    border-radius: 6px;
+    background-color: rgba(0, 128, 0, 0.2);
+    color: green;
+    padding: 1%;
+    margin: 0;
+}
+
+.valid-email{
+    border: 2px solid green;
+    border-radius: 6px;
+    background-color: rgba(0, 128, 0, 0.2);
+    color: green;
+    margin: 0 0 10px 0;
+}
+
+.invalid-email{
+    border: 2px solid red;
+    border-radius: 6px;
+    background-color: rgba(255, 0, 0, 0.2);
+    color: red;
+    margin: 0 0 10px 0;
+}
+
+.error-message{
+    border: 2px solid red;
+    border-radius: 6px;
+    background-color: rgba(255, 0, 0, 0.2);
+    color: red;
+    padding: 1%;
+    margin: 0;
+}
+
+fieldset{
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+
+legend{
+    margin: 0 0 0 10px;
+}
