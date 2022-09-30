@@ -1,11 +1,17 @@
+import './NewsletterForm.css'
 import React from 'react';
 import { useState } from 'react';
-import './NewsletterForm.css'
+import { useDispatch, useSelector } from 'react-redux';
+import { suscribeToNewsletter } from '../../Redux/Actions/index.js'
 
 
 function NewsletterForm() {
+
+    const dispatch = useDispatch();
+    const message = useSelector(state => state.message.msg);
+    console.log(message);
+
     const [inputForm, setInputForm] = useState({
-        state: 'initial',
         email: ''
     });
 
@@ -50,6 +56,11 @@ function NewsletterForm() {
 
     function onSubmitForm(event){
         event.preventDefault();
+        dispatch(suscribeToNewsletter(inputForm));
+    }
+
+    if(message){
+        return <p className="success-message">{message}</p>;
     }
 
     return (
