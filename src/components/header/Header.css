@@ -1,14 +1,8 @@
 .header{
-    /* background-color: #0f0f0f; */
     background-image: url('../../assets/header.jpg');
     background-position: center;
     background-size: cover;
     height: 600px;
-    margin: 0;
-    padding: 0;
-}
-
-.header{
     margin: 0;
     padding: 0;
 }
@@ -20,5 +14,5 @@
     color: white;
     text-shadow: 1px 1px 3px darkslategray;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
 }

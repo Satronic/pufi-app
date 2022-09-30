@@ -1,6 +1,9 @@
 .product{
+    background-color: white;
     display: flex;
     flex-direction: row;
+    margin: 1%;
+    box-shadow: 1px 1px 5px darkslategray;
 }
 
 .product-container-left, 
@@ -10,7 +13,6 @@
     justify-content: center;
     flex-direction: column;
     width: 50%;
-    margin: 1%;
 }
 
 .product-image-primary{
