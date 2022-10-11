@@ -10,12 +10,27 @@ import {
 } from "react-router-dom";
 import { Provider } from 'react-redux';
 import store from './Redux/Store/index.js';
+import Product from './components/Product/Product';
+import Allproducts from './components/Allproducts/Allproducts.js';
+// import Newsletter from './components/Newsletter/Newsletter.js'; 
+// import Header from './components/Header/Header.js';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Product />,
+      },
+      {
+        path: "/products",
+        element: <Allproducts />,
+      },
+    ],
   },
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

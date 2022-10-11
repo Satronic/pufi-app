@@ -1,0 +1,27 @@
+.allproducts{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 1px 1px 5px darkslategray;
+    margin: 1% 1%;
+    /* padding: 1%; */
+    height: 600px;
+}
+
+.container-left{
+    border: 1px solid black;
+    height: 90%;
+    padding: 1%;
+    margin: 1%;
+    width: 20%;
+}
+
+.container-right{
+    border: 1px solid black;
+    height: 90%;
+    padding: 1%;
+    margin: 1%;
+    width: 80%;
+}

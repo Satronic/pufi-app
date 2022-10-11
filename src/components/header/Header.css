@@ -7,6 +7,11 @@
     padding: 0;
 }
 
+.header-min{
+    background-color: black;
+    height: 90px;
+}
+
 .header-title{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 300%;
@@ -16,3 +21,8 @@
     text-align: center;
     margin-top: 150px;
 }
+
+.header-title-min{
+    display: none;
+}
+

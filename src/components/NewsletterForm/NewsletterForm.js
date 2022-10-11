@@ -9,7 +9,6 @@ function NewsletterForm() {
 
     const dispatch = useDispatch();
     const message = useSelector(state => state.message.msg);
-    console.log(message);
 
     const [inputForm, setInputForm] = useState({
         email: ''
