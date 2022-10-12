@@ -1,6 +1,9 @@
+// import filterProductsByCategory from "../../utils/index.js";
+
 import {
+    GET_ALL_PRODUCTS,
+    FILTER_PRODUCTS,
     SUSCRIBE_TO_NEWSLETTER,
-    GET_ALL_PRODUCTS
 } from "../Actions";
 
 const initialState = {
@@ -18,7 +21,16 @@ const rootReducer = (state = initialState, action) => {
             }
 
         case GET_ALL_PRODUCTS:
-            console.log(action.payload);
+            console.log('Products in actions', action.payload)
+            return {
+                ...state,
+                allProducts: action.payload
+            }
+
+        case FILTER_PRODUCTS:
+            // const allProducts = state.allProducts;
+            // const allCategories = action.payload;
+            // const filteredProducts = filterProductsByCategory(allProducts, allCategories);
             return {
                 ...state,
                 allProducts: action.payload

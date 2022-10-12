@@ -4,7 +4,7 @@ import './Card.css';
 // import { getProducts } from '../../Redux/Actions/index.js';
 
 
-function Card({image, title, price}) {
+function Card({image, title, price, category}) {
     // const allProducts = useSelector(state => state.allProducts);
     // const dispatch = useDispatch();
     
@@ -21,7 +21,10 @@ function Card({image, title, price}) {
                 {title}
             </p>
             <p className="card-price">
-                {price}
+                {category}
+            </p>
+            <p className="card-price">
+                {`$${price}`}
             </p>
         </div>
     );
