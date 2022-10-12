@@ -1,0 +1,28 @@
+.pager{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.pager-number-page{
+    cursor: pointer;
+    margin: 0 10px 0 0;
+    /* padding: 0; */
+}
+
+.page-active{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin: 0 10px 0 0;
+}
+
+.pager-title{
+    width: 200px;
+    margin-left: 20px;
+}

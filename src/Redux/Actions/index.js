@@ -1,9 +1,10 @@
 import axios from 'axios';
-import filterProductsByCategory from "../../utils/index.js";
+import {filterProductsByCategory} from "../../utils/index.js";
 
 export const SUSCRIBE_TO_NEWSLETTER = 'SUSCRIBE_TO_NEWSLETTER';
 export const GET_ALL_PRODUCTS = 'GET_ALL_PRODUCTS';
 export const FILTER_PRODUCTS = 'FILTER_PRODUCTS';
+export const CHANGE_PAGE = 'CHANGE_PAGE';
 export const SET_ERROR = 'SET_ERROR';
 
 const API_URL = 'https://formspree.io/f/mwkzbpja';
@@ -39,7 +40,6 @@ export const filterProducts = (categories) => {
             const products = allProducts.data;
             const filteredProducts = filterProductsByCategory(products, categories);
 
-           
             return dispatch({
                 type: FILTER_PRODUCTS,
                 payload: filteredProducts
@@ -53,16 +53,14 @@ export const filterProducts = (categories) => {
         }
     }
 };
-// export const filterProducts = (categories) => {
-//     if(categories.length === 0){
-//         getProducts();
-//     }
-//     console.log('Categories in actions', categories)
-//     return {
-//         type: FILTER_PRODUCTS,
-//         payload: categories
-//     }
-// }
+
+export const changePage = ([minLimit, maxLimit]) => {
+    // console.log(minLimit, maxLimit)
+    return {
+        type: CHANGE_PAGE,
+        payload: [minLimit, maxLimit]
+    }
+}
 
 export const suscribeToNewsletter = (inputForm) => {
     return async function(dispatch) {

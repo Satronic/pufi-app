@@ -1,18 +1,7 @@
 import './Card.css';
-// import { useSelector, useDispatch } from 'react-redux';
-// import { useState, useEffect } from 'react';
-// import { getProducts } from '../../Redux/Actions/index.js';
 
 
 function Card({image, title, price, category}) {
-    // const allProducts = useSelector(state => state.allProducts);
-    // const dispatch = useDispatch();
-    
-    // console.log(allProducts);
-
-    // useEffect(() =>{
-    //     dispatch(getProducts())
-    // })
     
     return (
         <div className="card">

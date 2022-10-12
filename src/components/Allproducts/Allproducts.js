@@ -1,21 +1,14 @@
 import './Allproducts.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import Card from '../Card/Card.js';
 import Allcategories from '../Allcategories/Allcategories.js';
+import Pager from '../Pager/Pager.js';
 
 
 function Allproducts() {
     const allProducts = useSelector(state => state.allProducts);
-    const dispatch = useDispatch();
-
-    // const allCategories = allProducts.map(product => {
-    //     return product.category.name;
-    // })
-
-    // let filterCategories = allCategories.filter((item,index)=>{
-    //   return allCategories.indexOf(item) === index;
-    // });
+    const pages = useSelector(state => state.pages);
+    const productsByPage = allProducts.slice(pages[0], pages[1]);
 
     const filterCategories = ['Furniture', 'Others', 'Electronics', 'Clothes', 'Shoes'];
 
@@ -27,7 +20,8 @@ function Allproducts() {
                 <Allcategories categories={filterCategories}/>
             </div>
             <div className="container-right">
-                {allProducts.map(product => {
+                <Pager products={allProducts}/>
+                {productsByPage.map(product => {
                     return (<Card 
                         id={product.id}
                         key={product.id}

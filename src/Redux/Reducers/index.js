@@ -3,17 +3,20 @@
 import {
     GET_ALL_PRODUCTS,
     FILTER_PRODUCTS,
+    CHANGE_PAGE,
     SUSCRIBE_TO_NEWSLETTER,
 } from "../Actions";
 
 const initialState = {
     allProducts: [],
+    pages: [0, 15],
     message: {},
     error: {}
 };
 
 const rootReducer = (state = initialState, action) => {
     switch (action.type) {
+        
         case SUSCRIBE_TO_NEWSLETTER:
             return {
                 ...state,
@@ -21,19 +24,23 @@ const rootReducer = (state = initialState, action) => {
             }
 
         case GET_ALL_PRODUCTS:
-            console.log('Products in actions', action.payload)
             return {
                 ...state,
                 allProducts: action.payload
             }
 
         case FILTER_PRODUCTS:
-            // const allProducts = state.allProducts;
-            // const allCategories = action.payload;
-            // const filteredProducts = filterProductsByCategory(allProducts, allCategories);
             return {
                 ...state,
+                pages: [0, 15],
                 allProducts: action.payload
+            }
+
+        case CHANGE_PAGE:
+            console.log(action.payload);
+            return {
+                ...state,
+                pages: action.payload
             }
 
         default:

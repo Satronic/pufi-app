@@ -10,7 +10,6 @@ function Allcategories({categories}) {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        console.log(selectedCategories);
         dispatch(filterProducts(selectedCategories));
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedCategories])
@@ -30,8 +29,7 @@ function Allcategories({categories}) {
         if(categoryFound){
             const filterCategories = selectedCategories.filter(category => category !== categoryFound);
             setSelectedCategories(filterCategories)
-        } 
-        // dispatch(filterProducts(selectedCategories));       
+        }      
     }
     
     return (
